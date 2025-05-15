@@ -145,25 +145,25 @@ document.addEventListener('DOMContentLoaded', function() {
         'flat-bottom-shoes': {
             title: 'Flat Bottom Shoes',
             price: 'KSh 350',
-            image: 'sh 1.jpg',
+            image: 'images/sh 1.jpg',
             description: 'Elegant flat bottom shoes designed for comfort and style. Perfect for casual and formal occasions. Made with premium materials and attention to detail.'
         },
         'lady-slides': {
             title: 'Lady Slides',
             price: 'KSh 300',
-            image: '1.jpg',
+            image: 'images/1.jpg',
             description: 'Comfortable and stylish slides perfect for everyday wear. Features a soft cushioned footbed and durable outsole.'
         },
         'zano-slide': {
             title: 'Zano Slide',
             price: 'KSh 350',
-            image: '3.jpg',
+            image: 'images/3.jpg',
             description: 'Trendy Zano slides with unique patterns and designs. Made for fashion-forward individuals who value both comfort and style.'
         },
         'casual-doll-sandals': {
             title: 'Casual Doll Sandals',
             price: 'KSh 650',
-            image: '4.jpg',
+            image: 'images/4.jpg',
             description: 'Premium casual sandals for your dolls. Features adjustable straps and soft footbed for the perfect fit.'
         }
     };
