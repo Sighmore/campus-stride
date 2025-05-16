@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'flat-bottom-shoes': {
             title: 'Flat Bottom Shoes',
             price: 'KSh 350',
-            image: 'images/sh 1.jpg',
+            image: 'images/2.jpg',
             description: 'Elegant flat bottom shoes designed for comfort and style. Perfect for casual and formal occasions. Made with premium materials and attention to detail.'
         },
         'lady-slides': {
@@ -184,13 +184,13 @@ document.addEventListener('DOMContentLoaded', function() {
             let productKey = '';
             
             // Match the title to our product data
-            if (productTitle === 'flat bottom shoes') {
-                productKey = 'flat-bottom-shoes';
-            } else if (productTitle === 'lady slides') {
+            if (productTitle === 'ladies\' slides') {
                 productKey = 'lady-slides';
-            } else if (productTitle === 'zano slide') {
+            } else if (productTitle === 'ladies\' flat bottom shoes') {
+                productKey = 'flat-bottom-shoes';
+            } else if (productTitle === 'ladies\' zano slide') {
                 productKey = 'zano-slide';
-            } else if (productTitle === 'casual doll sandals') {
+            } else if (productTitle === 'casual ladies\' sandals') {
                 productKey = 'casual-doll-sandals';
             }
             

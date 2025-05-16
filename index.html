@@ -262,13 +262,13 @@
         
         .category-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(2, minmax(400px, 1fr));
+            gap: 40px;
         }
         
         .category-card {
             position: relative;
-            height: 200px;
+            height: 250px;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -819,7 +819,7 @@
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/1.jpg" alt="Pink Bow Doll Shoes">
+                        <img src="images/1.jpg" alt="Ladies' Slides">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Ladies' Slides</h3>
@@ -832,7 +832,7 @@
                 <!-- Product 2 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/sh 1.jpg" alt="Blue Glitter Slides">
+                        <img src="images/2.jpg" alt="Ladies' Flat Bottom Shoes">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Ladies' Flat Bottom Shoes</h3>
@@ -845,7 +845,7 @@
                 <!-- Product 3 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/3.jpg" alt="Rainbow Doll Boots">
+                        <img src="images/3.jpg" alt="Ladies' Zano Slide">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Ladies' Zano Slide</h3>
@@ -858,7 +858,7 @@
                 <!-- Product 4 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/6.jpg" alt="Casual Doll Sandals">
+                        <img src="images/4.jpg" alt="Casual Ladies' Sandals">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Casual Ladies' Sandals</h3>
@@ -868,10 +868,212 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn view-all-btn">View All Products</a>
+            <a href="#" class="btn view-all-btn" id="view-all-btn">View All Products</a>
         </div>
     </section>
-    
+
+    <!-- Additional Products (Initially Hidden) -->
+    <section class="additional-products" id="additional-products" style="display: none;">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Additional Products -->
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 1.jpg" alt="Ladies' Shoes 5">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 5</h3>
+                        <div class="product-price">KSh 400</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 3.jpg" alt="Ladies' Shoes 6">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 6</h3>
+                        <div class="product-price">KSh 450</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 4.jpg" alt="Ladies' Shoes 7">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 7</h3>
+                        <div class="product-price">KSh 320</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 5.jpg" alt="Ladies' Shoes 8">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 8</h3>
+                        <div class="product-price">KSh 320</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                 <!-- Product 6 -->
+                 <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 6.jpg" alt="Ladies' Shoes 5">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 5</h3>
+                        <div class="product-price">KSh 400</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 7.jpg" alt="Ladies' Shoes 6">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 6</h3>
+                        <div class="product-price">KSh 450</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 8.jpg" alt="Ladies' Shoes 7">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 7</h3>
+                        <div class="product-price">KSh 320</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 9.jpg" alt="Ladies' Shoes 8">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 8</h3>
+                        <div class="product-price">KSh 320</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                 <!-- Product 5 -->
+                 <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 10.jpg" alt="Ladies' Shoes 5">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 5</h3>
+                        <div class="product-price">KSh 400</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 11.jpg" alt="Ladies' Shoes 6">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 6</h3>
+                        <div class="product-price">KSh 450</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 12.jpg" alt="Ladies' Shoes 7">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 7</h3>
+                        <div class="product-price">KSh 320</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 18.jpg" alt="Ladies' Shoes 8">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 8</h3>
+                        <div class="product-price">KSh 320</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                 <!-- Product 5 -->
+                 <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 20.jpg" alt="Ladies' Shoes 5">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 5</h3>
+                        <div class="product-price">KSh 400</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 19.jpg" alt="Ladies' Shoes 6">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 6</h3>
+                        <div class="product-price">KSh 450</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 16.jpg" alt="Ladies' Shoes 7">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 7</h3>
+                        <div class="product-price">KSh 320</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sl 17.jpg" alt="Ladies' Shoes 8">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ladies' Shoes 8</h3>
+                        <div class="product-price">KSh 320</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Continue adding products up to sl20.png -->
+            </div>
+        </div>
+    </section>
+
     <!-- Categories -->
     <section class="categories" id="categories">
         <div class="container">
@@ -883,44 +1085,22 @@
                 <!-- Category 1 -->
                 <div class="category-card">
                     <div class="category-bg">
-                        <img src="images/1.jpg" alt="Doll Shoes">
+                        <img src="images/sl 1.jpg" alt="Slides">
                     </div>
                     <div class="category-content">
-                        <h3>Doll Shoes</h3>
-                        <p>Elegant shoes for all doll sizes</p>
+                        <h3>Slides</h3>
+                        <p>Comfortable slides for casual style</p>
                     </div>
                 </div>
                 
                 <!-- Category 2 -->
                 <div class="category-card">
                     <div class="category-bg">
-                        <img src="2.jpg" alt="Doll Slides">
+                        <img src="images/sh 2.jpg" alt="Light Shoes">
                     </div>
                     <div class="category-content">
-                        <h3>Doll Slides</h3>
-                        <p>Comfortable slides for casual style</p>
-                    </div>
-                </div>
-                
-                <!-- Category 3 -->
-                <div class="category-card">
-                    <div class="category-bg">
-                        <img src="images/3.jpg" alt="Doll Boots">
-                    </div>
-                    <div class="category-content">
-                        <h3>Doll Boots</h3>
-                        <p>Stylish boots for fashion dolls</p>
-                    </div>
-                </div>
-                
-                <!-- Category 4 -->
-                <div class="category-card">
-                    <div class="category-bg">
-                        <img src="images/4.jpg" alt="Specialty Footwear">
-                    </div>
-                    <div class="category-content">
-                        <h3>Specialty Footwear</h3>
-                        <p>Unique designs for special occasions</p>
+                        <h3>Light Shoes</h3>
+                        <p>Stylish and lightweight shoes for everyday wear</p>
                     </div>
                 </div>
             </div>
@@ -1147,6 +1327,18 @@
                 });
             });
         });
+
+        // JavaScript to toggle additional products
+    document.getElementById('view-all-btn').addEventListener('click', function() {
+        const additionalProducts = document.getElementById('additional-products');
+        if (additionalProducts.style.display === 'none') {
+            additionalProducts.style.display = 'block';
+            this.textContent = 'Hide Products'; // Change button text
+        } else {
+            additionalProducts.style.display = 'none';
+            this.textContent = 'View All Products'; // Reset button text
+        }
+    });
     </script>
     <script src="js/shoe-detail-viewer.js"></script>
 </body>
