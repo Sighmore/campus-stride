@@ -139,4 +139,4 @@ Hours: Mon-Fri 9am-5pm
 
 Project Link: [https://github.com/Sighmore/campus-stride](https://github.com/Sighmore/campus-stride)
 
-Website: [http://campusstride.vercel.app/](http://campusstride.vercel.app/)
+Website: [http://campusstride.vercel.app/](http://campus-stride.vercel.app/)
