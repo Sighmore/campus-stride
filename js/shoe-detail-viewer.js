@@ -143,28 +143,125 @@ document.addEventListener('DOMContentLoaded', function() {
     // Shoe product data
     const shoeProducts = {
         'flat-bottom-shoes': {
-            title: 'Flat Bottom Shoes',
-            price: 'KSh 350',
+            title: 'Flat Slides',
+            price: 'KSh 300',
             image: 'images/2.jpg',
-            description: 'Elegant flat bottom shoes designed for comfort and style. Perfect for casual and formal occasions. Made with premium materials and attention to detail.'
+            description: 'Elegant flat bottom slides designed for comfort and style. Made with premium materials and attention to detail.'
         },
         'lady-slides': {
-            title: 'Lady Slides',
+            title: 'Ladies\' Slides',
             price: 'KSh 300',
             image: 'images/1.jpg',
-            description: 'Comfortable and stylish slides perfect for everyday wear. Features a soft cushioned footbed and durable outsole.'
+            description: 'Perfect for casual and formal occasions. Features a soft cushioned footbed and durable outsole.'
         },
         'zano-slide': {
-            title: 'Zano Slide',
-            price: 'KSh 350',
+            title: 'Ladies\' Zano Slide',
+            price: 'KSh 300',
             image: 'images/3.jpg',
-            description: 'Trendy Zano slides with unique patterns and designs. Made for fashion-forward individuals who value both comfort and style.'
+            description: 'Trendy Zano slides with unique patterns and designs.'
         },
         'casual-doll-sandals': {
-            title: 'Casual Doll Sandals',
-            price: 'KSh 650',
+            title: 'Casual Ladies\' Sandals',
+            price: 'KSh 300',
             image: 'images/4.jpg',
-            description: 'Premium casual sandals for your dolls. Features adjustable straps and soft footbed for the perfect fit.'
+            description: 'Premium casual sandals for your casual wear.'
+        },
+        // Additional shoes from index.html
+        'flat-slides-1': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 1.jpg',
+            description: 'Comfortable flat slides perfect for casual wear.'
+        },
+        'flat-slides-2': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 3.jpg',
+            description: 'Stylish flat slides designed for everyday comfort.'
+        },
+        'flat-slides-3': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 4.jpg',
+            description: 'Trendy flat slides that combine style and comfort.'
+        },
+        'flat-slides-4': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 5.jpg',
+            description: 'Elegant flat slides that are perfect for any occasion.'
+        },
+        'flat-slides-5': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 6.jpg',
+            description: 'Durable flat slides made for long-lasting wear.'
+        },
+        'flat-slides-6': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 7.jpg',
+            description: 'Chic flat slides that add a touch of elegance to your outfit.'
+        },
+        'flat-slides-7': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 8.jpg',
+            description: 'Versatile flat slides suitable for both indoor and outdoor use.'
+        },
+        'flat-slides-8': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 9.jpg',
+            description: 'Fashionable flat slides that are easy to wear and style.'
+        },
+        'flat-slides-9': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 10.jpg',
+            description: 'Comfortable flat slides that provide great support.'
+        },
+        'flat-slides-10': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 11.jpg',
+            description: 'Stylish flat slides that are perfect for summer outings.'
+        },
+        'flat-slides-11': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 12.jpg',
+            description: 'Lightweight flat slides designed for all-day wear.'
+        },
+        'flat-slides-12': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 18.jpg',
+            description: 'Trendy flat slides that are both comfortable and stylish.'
+        },
+        'flat-slides-13': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 19.jpg',
+            description: 'Elegant flat slides that complement any outfit.'
+        },
+        'flat-slides-14': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 16.jpg',
+            description: 'Chic flat slides that are perfect for casual outings.'
+        },
+        'flat-slides-15': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 17.jpg',
+            description: 'Comfortable flat slides that are easy to slip on.'
+        },
+        'flat-slides-16': {
+            title: 'Flat Slides',
+            price: 'KSh 300',
+            image: 'images/sl 20.jpg',
+            description: 'Stylish flat slides that provide comfort and support.'
         }
     };
     
@@ -173,6 +270,42 @@ document.addEventListener('DOMContentLoaded', function() {
     productCards.forEach(card => {
         card.style.cursor = 'pointer';
         
+        // Add click event to the product image
+        const productImage = card.querySelector('.product-image img');
+        productImage.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent triggering the card click event
+            
+            // Get the product title
+            const productTitle = card.querySelector('.product-title').textContent.toLowerCase().trim();
+            let productKey = '';
+            
+            // Match the title to our product data
+            if (productTitle === 'ladies\' slides') {
+                productKey = 'lady-slides';
+            } else if (productTitle === 'ladies\' flat bottom shoes') {
+                productKey = 'flat-bottom-shoes';
+            } else if (productTitle === 'ladies\' zano slide') {
+                productKey = 'zano-slide';
+            } else if (productTitle === 'casual ladies\' sandals') {
+                productKey = 'casual-doll-sandals';
+            }
+            
+            if (productKey && shoeProducts[productKey]) {
+                // Update modal content
+                document.getElementById('modal-shoe-img').src = shoeProducts[productKey].image;
+                document.getElementById('modal-shoe-title').textContent = shoeProducts[productKey].title;
+                document.getElementById('modal-shoe-price').textContent = shoeProducts[productKey].price;
+                document.getElementById('modal-shoe-description').textContent = shoeProducts[productKey].description;
+                
+                // Show the modal with animation
+                modal.style.display = 'block';
+                setTimeout(() => {
+                    modalContent.style.transform = 'scale(1)';
+                }, 10);
+            }
+        });
+        
+        // Existing click event for the card
         card.addEventListener('click', function(e) {
             // Prevent default if it's a link
             if (e.target.tagName === 'A') {
